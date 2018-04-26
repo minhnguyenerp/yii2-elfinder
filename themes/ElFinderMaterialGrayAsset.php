@@ -10,14 +10,14 @@ namespace mihaildev\elfinder\themes;
 
 use yii\web\AssetBundle;
 
-class ElFinderMooAsset extends AssetBundle
+class ElFinderMaterialGrayAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/mihaildev/yii2-elfinder/themes/vendor';
 	
     public function init()
     {
         $this->css = [
-            'elfinder-theme-moono/css/theme.css',
+            'elFinder-Material-Theme/css/theme-gray.css',
         ];
 
         parent::init();
