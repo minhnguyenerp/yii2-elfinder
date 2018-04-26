@@ -33,6 +33,7 @@ class ElFinder extends BaseWidjet{
 	public $containerOptions = [];
 	public $frameOptions = [];
 	public $controller = 'elfinder';
+    public $theme = 'default';
 
 	public static function genPathHash($path)
 	{
@@ -105,6 +106,8 @@ class ElFinder extends BaseWidjet{
 
 		if($this->multiple)
 			$managerOptions['multiple'] = $this->multiple;
+
+        $managerOptions['theme'] = $this->theme;
 			
 		$this->frameOptions['src'] = $this->getManagerUrl($this->controller, $managerOptions);
 

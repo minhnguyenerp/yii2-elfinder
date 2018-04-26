@@ -6,9 +6,19 @@
  */
 use mihaildev\elfinder\Assets;
 use yii\helpers\Json;
+use mihaildev\elfinder\themes\ElFinderWin10Asset;
+use mihaildev\elfinder\themes\ElFinderMooAsset;
+use mihaildev\elfinder\themes\ElFinderMaterialAsset;
 
 
 Assets::register($this);
+if(isset($_GET['theme']) && $_GET['theme'] == 'win10') {
+    ElFinderWin10Asset::register($this);
+} else if(isset($_GET['theme']) && $_GET['theme'] == 'moo') {
+    ElFinderMooAsset::register($this);
+} else if(isset($_GET['theme']) && $_GET['theme'] == 'material') {
+    ElFinderMaterialAsset::register($this);
+}
 Assets::addLangFile($options['lang'], $this);
 
 if(!empty($options['noConflict']))
