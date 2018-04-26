@@ -21,11 +21,5 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-jui": "*",
         "studio-42/elfinder": "*"
-    },
-    "extra": {
-      "asset-installer-paths": {
-        "npm-asset-library": "vendor/npm",
-        "bower-asset-library": "vendor/bower"
-      }
     }
 }
