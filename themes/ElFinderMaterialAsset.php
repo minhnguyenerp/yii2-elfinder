@@ -12,7 +12,7 @@ use yii\web\AssetBundle;
 
 class ElFinderMaterialAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/mihaildev/themes/vendor';
+    public $sourcePath = '@vendor/mihaildev/yii2-elfinder/themes/vendor';
 	
     public function init()
     {
